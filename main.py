@@ -15,7 +15,7 @@ gmaps = googlemaps.Client(key=your_key)
 origins = pd.read_csv("origins.csv")
 destinations = pd.read_csv("destinations.csv")
 
-outputtxt = open("output.txt", "w")
+outputtxt = open("output.txt", "w", encoding="utf-8")
 
 # Matrix is divided into 10x10 subblocks such that there are 100 requests per second.
 originBlocks = list()
